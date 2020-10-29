@@ -1,0 +1,10 @@
+<div class="header">
+  <h1>Dojo Weather API</h1>
+</div>
+<div class="navbar">
+  <!-- TODO: iterate over cities array as links -->
+  <p *ngFor="let city of cities" >
+    <a [routerLink]="[ '/', city.city]">{{city.city}}, {{city.state}}</a>
+  </p>
+</div>
+<router-outlet></router-outlet>

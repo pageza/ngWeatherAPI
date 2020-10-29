@@ -1,0 +1,16 @@
+<h5 style="text-align: center">{{weatherData.name}}</h5>
+<div class="row">
+  <div class="card col-6">
+    <p><span style="font-weight: bold">Humidity: </span>{{weatherData.main.humidity}}%</p>
+    <p><span style="font-weight: bold">Average Temp: </span>{{weatherData.main.temp}}F</p>
+    <p><span style="font-weight: bold">High Temp: </span>{{weatherData.main.temp_max}}F</p>
+    <p><span style="font-weight: bold">Low Temp: </span>{{weatherData.main.temp_min}}F</p>
+    <p><span style="font-weight: bold">Status: </span>{{weatherData.weather[0].description}}</p>
+  </div>
+  <div class="card col-6">
+    <script></script>
+    <img src="{{cityscape.photos[randomImage(cityscape.photos.length)].src.original}}"  style="width: 100%; height: 15vw;object-fit: contain; padding: 10px">
+    <p>Photo by {{cityscape.photos[0].photographer }}</p>
+    <p>{{cityscape.photos[0].photographer_url}}</p>
+  </div>
+</div>
